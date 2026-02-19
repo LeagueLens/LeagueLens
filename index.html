@@ -58,12 +58,14 @@
         From tactical evolution modelling to Fantasy Premier League optimisation — we turn raw match data into <strong>decision intelligence</strong>.
       </p>
       <div class="hero-cta">
-        <a href="#platforms" class="btn btn-primary">
-          Explore Platforms
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
-          </svg>
-        </a>
+        <div class="cta-wrapper">
+          <a href="#platforms" class="btn btn-primary">
+            Explore Platforms
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -124,7 +126,7 @@
     <div class="container">
       <div class="section-header">
         <h2>Our <span class="gradient-text">Platforms</span></h2>
-        <p>Choose your path to football intelligence</p>
+        <p>Choose your path to sportlyx labs intelligence</p>
       </div>
       
       <div class="cards">
@@ -180,6 +182,34 @@
             </a>
           </div>
         </div>
+
+        <!-- IPLT20 Card -->
+        <div class="card card-ipl">
+          <div class="card-image">
+            <img src="assets/sportlyx_ipl.png" alt="Sportlyx IPLT20 analysis platform preview">
+          </div>
+          <div class="card-content">
+            <span class="card-badge badge-ipl">T20 Intelligence</span>
+            <h3>Sportlyx IPLT20</h3>
+            <span class="micro-tag">IPL Tactical Analysis & Evolution</span>
+            <p class="card-description">
+              Structural IPL analysis across seasons. Role classification. Tactical identity mapping.
+              From ball-level events to team evolution intelligence.
+            </p>
+            <ul class="card-features">
+              <li>Player Role & Phase Classification</li>
+              <li>Team Identity & Tactical Drift Modelling</li>
+              <li>Season-to-Season Evolution Tracking</li>
+            </ul>
+            <a href="https://sportlyxipl.streamlit.app" class="btn btn-card btn-ipl" target="_blank" rel="noopener noreferrer">
+              Enter IPL Intelligence
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17L17 7M17 7H7M17 7v10"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
       </div>
     </div>
   </section>
@@ -223,6 +253,30 @@
       </div>
     </div>
   </footer>
+
+  <!-- Parallax Script -->
+  <script>
+    const hero = document.querySelector('.hero');
+    const content = document.querySelector('.hero-content');
+
+    if (window.innerWidth > 768) {
+      hero.addEventListener('mousemove', (e) => {
+        const { offsetWidth: width, offsetHeight: height } = hero;
+        const x = (e.offsetX / width - 0.5) * 10;
+        const y = (e.offsetY / height - 0.5) * 10;
+
+        content.style.transform = `
+          rotateX(${-y * 1.2}deg)
+          rotateY(${x * 1.2}deg)
+          translateZ(30px)
+        `;
+      });
+
+      hero.addEventListener('mouseleave', () => {
+        content.style.transform = 'rotateX(0) rotateY(0)';
+      });
+    }
+  </script>
 
 </body>
 </html>
