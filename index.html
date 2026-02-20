@@ -18,10 +18,19 @@
       <div class="logo">
         <img src="assets/sportlyx_labs.png" alt="Sportlyx Labs" class="logo-img">
       </div>
+      <div class="nav-title">Sportlyx Labs</div>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#platforms">Platforms</a>
         <a href="#contact">Contact</a>
+      </div>
+      <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <!-- Mobile menu will use the same nav-links -->
       </div>
     </div>
   </nav>
@@ -233,7 +242,7 @@
       <div class="footer-content">
         <div class="footer-brand">
           <img src="assets/sportlyx_labs.png" alt="Sportlyx Labs" class="footer-logo">
-          <p>Structured Football Intelligence</p>
+          <p>Structured Sports Intelligence</p>
         </div>
         <div class="footer-links">
           <div class="footer-column">
@@ -276,6 +285,36 @@
         content.style.transform = 'rotateX(0) rotateY(0)';
       });
     }
+  </script>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    mobileMenuToggle.addEventListener('click', () => {
+      mobileMenuToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+      
+      // Move nav-links into mobile menu when opening
+      if (mobileMenu.classList.contains('active')) {
+        mobileMenu.appendChild(navLinks);
+      } else {
+        // Move nav-links back to original position when closing
+        document.querySelector('.nav-container').insertBefore(navLinks, mobileMenuToggle);
+      }
+    });
+
+    // Close menu when a link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenuToggle.classList.remove('active');
+        mobileMenu.classList.remove('active');
+        // Move nav-links back to original position
+        document.querySelector('.nav-container').insertBefore(navLinks, mobileMenuToggle);
+      });
+    });
   </script>
 
 </body>
