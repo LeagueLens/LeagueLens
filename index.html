@@ -1,321 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sportlyx Labs | Structured Football Intelligence</title>
-  <meta name="description" content="From tactical evolution modelling to Fantasy Premier League optimisation — we turn raw match data into decision intelligence.">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>LeagueLens Engine</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="logo">
-        <img src="assets/sportlyx_labs.png" alt="Sportlyx Labs" class="logo-img">
-      </div>
-      <div class="nav-title">Sportlyx Labs</div>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#platforms">Platforms</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="mobile-menu-toggle" id="mobile-menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="mobile-menu" id="mobile-menu">
-        <!-- Mobile menu will use the same nav-links -->
-      </div>
-    </div>
-  </nav>
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">
+    <img src="assets/logo.png" alt="LeagueLens Labs Logo" height="100" />
+  </a>
+  <div class="nav-links">
+    <a href="#why">About</a>
+    <a href="#platforms">Platforms</a>
+    <a href="#methodology">Methodology</a>
+    <a href="#platforms" class="nav-btn">Explore →</a>
+  </div>
+</nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-bg">
-      <div class="grid"></div>
-      <div class="orb orb-football"></div>
-      <div class="orb orb-cricket"></div>
-      <div class="arc arc-1"></div>
-      <div class="arc arc-2"></div>
-      <div class="ghost-data"></div>
-      <div class="data-layer">
-        <span>0.87</span>
-        <span>+1.42</span>
-        <span>GW24</span>
-        <span>3.18</span>
-        <span>-0.64</span>
-        <span>xT 1.22</span>
-        <span>VAR 0.41</span>
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-glow"></div>
+    <!-- Animated Grid -->
+    <div class="hero-grid"></div>
+    <!-- Floating Orbs -->
+    <div class="orb orb-football"></div>
+    <div class="orb orb-cricket"></div>
+    <!-- Trajectory Arcs -->
+    <div class="arc arc-1"></div>
+    <div class="arc arc-2"></div>
+    <!-- Ghost Data -->
+    <div class="ghost-data"></div>
+    <!-- Floating Data Layer -->
+    <div class="data-layer">
+      <span class="terminal-text">VAR 0.87</span>
+      <span class="terminal-text">GW 24.5</span>
+      <span class="terminal-text">xG 2.31</span>
+      <span class="terminal-text">PPA 1.89</span>
+      <span class="terminal-text">SPD 12.4</span>
+    </div>
+    <div class="hero-eyebrow"><span class="hero-dot"></span> EPL &amp; IPL T20 Intelligence</div>
+    <h1>Evolving the Way<br/>You See <span class="teal">Sport</span></h1>
+    <p class="hero-sub">From tactical evolution modelling to Fantasy Premier League optimisation — we turn raw match data into decision intelligence.<br/>We don't analyse moments. We model systems.</p>
+    <div class="hero-actions">
+      <a href="#platforms" class="btn-card">Explore Platforms</a>
+      <a href="#methodology" class="btn-glass">Our Methodology</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-card">
+        <div class="stat-num">18+</div>
+        <div class="stat-lbl">Seasons Analysed</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">37K+</div>
+        <div class="stat-lbl">Events Modelled</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">3</div>
+        <div class="stat-lbl">Platforms</div>
       </div>
     </div>
-    <div class="container hero-content">
-      <img src="assets/sportlyx_labs.png" alt="Sportlyx Labs" class="hero-logo">
-      <div class="hero-badge">
-        <span class="badge-dot"></span>
-        Structured Sports Intelligence
-      </div>
-      <h1 class="hero-title">
-        Sportlyx <span class="gradient-text">Labs</span>
-      </h1>
-      <p class="hero-subtitle">
-        From tactical evolution modelling to Fantasy Premier League optimisation — we turn raw match data into <strong>decision intelligence</strong>.
-      </p>
-      <div class="hero-cta">
-        <div class="cta-wrapper">
-          <a href="#platforms" class="btn btn-primary">
-            Explore Platforms
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
+  </div>
+
+<div class="hr"></div>
+
+<!-- WHY -->
+<div class="wrap" id="why">
+  <div class="eyebrow">Why LeagueLens Engine</div>
+  <h2 class="sec-title">We don't analyse moments.<br/>We model systems.</h2>
+  <p class="sec-desc">Sport is drowning in opinions dressed as analysis. We treat football and cricket as dynamic, evolving systems — not highlight reels.</p>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-icon">📊</div>
+      <h3>Data Layer</h3>
+      <p>Raw match events transformed into structured, phase-aware datasets capturing the true architecture of each game.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">🧠</div>
+      <h3>Modelling Layer</h3>
+      <p>Performance curves, tactical drift analysis, and structural change detection — tracked across seasons and eras.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">🔮</div>
+      <h3>Intelligence Layer</h3>
+      <p>Detect trends before narratives catch up. Signal over noise. Structure over vibes.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">🔬</div>
+      <h3>Lab Mindset</h3>
+      <p>Never static. Our platforms evolve continuously as leagues shift, seasons progress, and new data emerges.</p>
+    </div>
+  </div>
+</div>
+
+<div class="hr"></div>
+
+<!-- PLATFORMS -->
+<div class="platforms-bg" id="platforms">
+  <div class="wrap">
+    <div class="eyebrow">Our Platforms</div>
+    <h2 class="sec-title">Three lenses. One continuous view.</h2>
+    <p class="sec-desc">Each platform is purpose-built for a distinct layer of analysis — from tactical evolution to fantasy decision intelligence.</p>
+
+    <div class="plat-grid">
+
+       <!-- Evolution -->
+       <div class="plat-card card-evolution">
+        <div class="plat-info">
+          <div class="plat-badge">EPL · Analysis & Modelling</div>
+          <h3>LeagueLens Premier League</h3>
+          <p>Tactical and performance evolution modelling for the Premier League. Phase-aware analytics tracking how teams, roles, and systems shift across seasons.</p>
+          <ul class="plat-features">
+            <li>Signal vs Noise Separation</li>
+            <li>Role & System Drift Detection</li>
+            <li>Structural Identity Mapping</li>
+            <li>Season-on-Season Comparison</li>
+          </ul>
+          <a href="https://leaguelens-epl.streamlit.app" target="_blank" class="plat-link">
+            Enter Premier League Engine
+            <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 6h10M7 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Manifesto Section -->
-  <section class="manifesto">
-    <div class="container">
-      <p>
-        We don't analyse moments. We model systems.
-        Performance evolves. Variance lies.
-        Structure reveals truth.
-      </p>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-content">
-          <h2>Why <span class="gradient-text">Sportlyx</span>?</h2>
-          <p class="about-text">
-            Sport is drowning in opinions dressed as analysis. Someone shouts "world class." Someone else says "he's too small." That's not analysis. <strong>That's vibes with a microphone.</strong>
-          </p>
-          <p class="about-text">
-            We treat football as a dynamic, evolving system — not a highlight reel. Our platforms let you see the game as it actually unfolds.
-          </p>
-        </div>
-        <div class="features-list">
-          <div class="feature-item">
-            <div class="feature-icon">📊</div>
-            <div class="feature-content">
-              <h3>Data Layer</h3>
-              <p>Raw match events transformed into structured, phase-aware datasets.</p>
+        <div class="plat-viz">
+          <div class="viz">
+            <div class="v-bars">
+              <div class="v-bar" style="height:55%"></div>
+              <div class="v-bar" style="height:72%"></div>
+              <div class="v-bar" style="height:48%"></div>
+              <div class="v-bar" style="height:88%"></div>
+              <div class="v-bar" style="height:65%"></div>
+              <div class="v-bar" style="height:95%"></div>
+              <div class="v-bar" style="height:70%"></div>
+              <div class="v-bar" style="height:82%"></div>
             </div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-icon">🧠</div>
-            <div class="feature-content">
-              <h3>Modelling Layer</h3>
-              <p>Performance curves, tactical shifts, and structural change analysis.</p>
+            <div class="v-label-row">
+              <span class="v-label">GW1</span><span class="v-label">GW12</span><span class="v-label">GW24</span><span class="v-label">GW38</span>
             </div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-icon">🔮</div>
-            <div class="feature-content">
-              <h3>Intelligence Layer</h3>
-              <p>Detect trends before narratives catch up.</p>
+            <div class="v-divider"></div>
+            <div class="v-dots">
+              <div class="v-dot"></div><div class="v-dot on"></div><div class="v-dot"></div>
+              <div class="v-dot on"></div><div class="v-dot"></div><div class="v-dot on"></div>
             </div>
           </div>
         </div>
       </div>
+
+       <!-- FPL -->
+       <div class="plat-card card-fpl">
+        <div class="plat-info">
+          <div class="plat-badge">FPL · Fantasy Intelligence</div>
+          <h3>LeagueLens Fantasy Premier league</h3>
+          <p>Data-driven Fantasy Premier League decision modelling. Form trajectories, volatility signals, and fixture leverage — for managers who want a structured edge.</p>
+          <ul class="plat-features">
+            <li>Return Projection Curves</li>
+            <li>Variance & Rotation Risk Modelling</li>
+            <li>Fixture Phase Leverage Mapping</li>
+            <li>Strategic Transfer Optimisation</li>
+          </ul>
+          <a href="https://leaguelens-fpl.streamlit.app" target="_blank" class="plat-link">
+            Enter Fantasy Premier League Engine
+            <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 6h10M7 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <div class="plat-viz">
+          <div class="viz">
+            <div class="v-radar-wrap">
+              <div class="v-radar">
+                <div class="v-ring v-r1"></div>
+                <div class="v-ring v-r2"></div>
+                <div class="v-ring v-r3"></div>
+                <div class="v-rfill"></div>
+              </div>
+            </div>
+            <div class="v-divider"></div>
+            <div class="v-dots">
+              <div class="v-dot on"></div><div class="v-dot"></div><div class="v-dot on"></div>
+              <div class="v-dot on"></div><div class="v-dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- IPL -->
+      <div class="plat-card">
+        <div class="plat-info">
+          <div class="plat-badge">IPL T20 · Tactical Intelligence</div>
+          <h3>LeagueLens IPL T20</h3>
+          <p>Structural IPL analysis across seasons. From ball-level events to team identity evolution — tracking how T20 cricket's most dynamic league reshapes itself year on year.</p>
+          <ul class="plat-features">
+            <li>Player Role & Phase Classification</li>
+            <li>Team Identity & Tactical Drift Modelling</li>
+            <li>Season-to-Season Evolution Tracking</li>
+            <li>Batting & Bowling Meta Shifts</li>
+          </ul>
+          <a href="https://leaguelens-iplt20.streamlit.app" target="_blank" class="plat-link">
+            Enter IPL T20 Engine
+            <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 6h10M7 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <div class="plat-viz">
+          <div class="viz">
+            <div class="v-tl">
+              <div class="v-tl-row"><div class="v-tl-lbl">S16</div><div class="v-tl-track"><div class="v-tl-fill" style="width:58%"></div></div></div>
+              <div class="v-tl-row"><div class="v-tl-lbl">S17</div><div class="v-tl-track"><div class="v-tl-fill" style="width:69%"></div></div></div>
+              <div class="v-tl-row"><div class="v-tl-lbl">S18</div><div class="v-tl-track"><div class="v-tl-fill" style="width:78%"></div></div></div>
+              <div class="v-tl-row"><div class="v-tl-lbl">S19</div><div class="v-tl-track"><div class="v-tl-fill" style="width:88%"></div></div></div>
+              <div class="v-tl-row"><div class="v-tl-lbl">S20</div><div class="v-tl-track"><div class="v-tl-fill" style="width:96%"></div></div></div>
+            </div>
+            <div class="v-divider" style="margin-top:14px;"></div>
+            <div class="v-dots" style="margin-top:10px;">
+              <div class="v-dot"></div><div class="v-dot on"></div><div class="v-dot on"></div>
+              <div class="v-dot"></div><div class="v-dot on"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</div>
 
-  <!-- Platforms Section -->
-  <section id="platforms" class="platforms">
-    <div class="container">
-      <div class="section-header">
-        <h2>Our <span class="gradient-text">Platforms</span></h2>
-        <p>Choose your path to sportlyx labs intelligence</p>
-      </div>
-      
-      <div class="cards">
-        <!-- Evolution Card -->
-        <div class="card card-evolution">
-          <div class="card-image">
-            <img src="assets/sportlyx_evolution.png" alt="Sportlyx Evolution platform preview">
-          </div>
-          <div class="card-content">
-            <span class="card-badge">Analysis & Modelling</span>
-            <h3>Sportlyx Evolution</h3>
-            <p class="card-description">
-              Tactical and performance evolution modelling.
-              Phase-aware analytics. Structural trend detection.
-            </p>
-            <ul class="card-features">
-              <li>Signal vs Noise Separation</li>
-              <li>Role & System Drift Detection</li>
-              <li>Structural Identity Mapping</li>
-            </ul>
-            <a href= "https://sportlyxevo.streamlit.app" class="btn btn-card" target="_blank" rel="noopener noreferrer">
-              Enter Evolution Platform
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M7 17L17 7M17 7H7M17 7v10"/>
-              </svg>
-            </a>
-          </div>
-        </div>
+<div class="hr"></div>
 
-        <!-- FPL Card -->
-        <div class="card card-fpl">
-          <div class="card-image">
-            <img src="assets/sportlyx_fpl.png" alt="Sportlyx FPL platform preview">
-          </div>
-          <div class="card-content">
-            <span class="card-badge badge-fpl">Fantasy Intelligence</span>
-            <h3>Sportlyx FPL</h3>
-            <span class="micro-tag">Fantasy Premier League</span>
-            <p class="card-description">
-              Data-driven Fantasy Premier League and T20 decision modelling.
-              Form trajectory. Volatility signals. Strategic optimisation.
-            </p>
-            <ul class="card-features">
-              <li>Return Projection Curves</li>
-              <li>Variance & Rotation Risk Modelling</li>
-              <li>Fixture Phase Leverage Mapping</li>
-            </ul>
-            <a href="https://sportlyxfpl.streamlit.app" class="btn btn-card btn-fpl" target="_blank" rel="noopener noreferrer">
-              Enter FPL Platform
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M7 17L17 7M17 7H7M17 7v10"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- IPLT20 Card -->
-        <div class="card card-ipl">
-          <div class="card-image">
-            <img src="assets/sportlyx_ipl.png" alt="Sportlyx IPLT20 analysis platform preview">
-          </div>
-          <div class="card-content">
-            <span class="card-badge badge-ipl">T20 Intelligence</span>
-            <h3>Sportlyx IPLT20</h3>
-            <span class="micro-tag">IPL Tactical Analysis & Evolution</span>
-            <p class="card-description">
-              Structural IPL analysis across seasons. Role classification. Tactical identity mapping.
-              From ball-level events to team evolution intelligence.
-            </p>
-            <ul class="card-features">
-              <li>Player Role & Phase Classification</li>
-              <li>Team Identity & Tactical Drift Modelling</li>
-              <li>Season-to-Season Evolution Tracking</li>
-            </ul>
-            <a href="https://sportlyxipl.streamlit.app" class="btn btn-card btn-ipl" target="_blank" rel="noopener noreferrer">
-              Enter IPL Intelligence
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M7 17L17 7M17 7H7M17 7v10"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-        
-      </div>
+<!-- METHODOLOGY -->
+<div class="wrap" id="methodology">
+  <div class="eyebrow">How We Work</div>
+  <h2 class="sec-title">The Engineering Architecture</h2>
+  <p class="sec-desc">A rigorous three-stage methodology transforming raw event data into structured, actionable intelligence.</p>
+  <div class="method-grid">
+    <div class="method-step">
+      <div class="method-n">01</div>
+      <h3>Collect & Structure</h3>
+      <p>Raw match-level event data ingested, cleaned, and transformed into phase-aware structured datasets capturing the true architecture of each game.</p>
+      <div class="method-chip">Data Engineering</div>
     </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="cta-section">
-    <div class="container">
-      <div class="cta-content">
-        <h2>Ready to evolve your analysis?</h2>
-        <p>Football evolves. So should your analysis — and your fantasy game.</p>
-        <a href="#platforms" class="btn btn-primary btn-large">
-          Get Started Today
-        </a>
-      </div>
+    <div class="method-step">
+      <div class="method-n">02</div>
+      <h3>Model & Detect</h3>
+      <p>Statistical models identify structural shifts — in player roles, team systems, and league meta — separating genuine signal from statistical noise.</p>
+      <div class="method-chip">Analytics & Modelling</div>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer id="contact" class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <img src="assets/sportlyx_labs.png" alt="Sportlyx Labs" class="footer-logo">
-          <p>Structured Sports Intelligence</p>
-        </div>
-        <div class="footer-links">
-          <div class="footer-column">
-            <h4>Platforms</h4>
-            <a href="https://sportlyxevo.streamlit.app">Sportlyx Evolution</a>
-            <a href="https://sportlyxfpl.streamlit.app">Sportlyx FPL</a>
-            <a href="https://sportlyxipl.streamlit.app">Sportlyx IPL T20</a>
-          </div>
-          <div class="footer-column">
-            <h4>Connect</h4>
-            <a href="https://github.com/SportlyxLabs">GitHub</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Sportlyx Labs. All rights reserved.</p>
-      </div>
+    <div class="method-step">
+      <div class="method-n">03</div>
+      <h3>Surface & Evolve</h3>
+      <p>Insights surfaced through our platforms continuously. As leagues evolve, so do our models — iteration is central to the Engine ethos.</p>
+      <div class="method-chip">Intelligence Output</div>
     </div>
-  </footer>
+  </div>
+</div>
 
-  <!-- Parallax Script -->
-  <script>
-    const hero = document.querySelector('.hero');
-    const content = document.querySelector('.hero-content');
+<!-- CTA BAND -->
+<div class="cta-band">
+  <div class="cta-glow"></div>
+  <h2>Ready to see the game <span>differently?</span></h2>
+  <p>Three platforms. Two leagues. One continuous, evolving view of sport.</p>
+  <div class="cta-btns">
+    <a href="https://leaguelens-epl.streamlit.app" target="_blank" class="btn-card">EPL Evolution</a>
+    <a href="https://leaguelens-fpl.streamlit.app" target="_blank" class="btn-card">FPL Intelligence</a>
+    <a href="https://leaguelens-iplt20.streamlit.app" target="_blank" class="btn-card">IPL T20 Analysis</a>
+  </div>
+</div>
 
-    if (window.innerWidth > 768) {
-      hero.addEventListener('mousemove', (e) => {
-        const { offsetWidth: width, offsetHeight: height } = hero;
-        const x = (e.offsetX / width - 0.5) * 10;
-        const y = (e.offsetY / height - 0.5) * 10;
-
-        content.style.transform = `
-          rotateX(${-y * 1.2}deg)
-          rotateY(${x * 1.2}deg)
-          translateZ(30px)
-        `;
-      });
-
-      hero.addEventListener('mouseleave', () => {
-        content.style.transform = 'rotateX(0) rotateY(0)';
-      });
-    }
-  </script>
-
-  <!-- Mobile Menu Script -->
-  <script>
-    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const navLinks = document.querySelector('.nav-links');
-
-    mobileMenuToggle.addEventListener('click', () => {
-      mobileMenuToggle.classList.toggle('active');
-      mobileMenu.classList.toggle('active');
-      
-      // Move nav-links into mobile menu when opening
-      if (mobileMenu.classList.contains('active')) {
-        mobileMenu.appendChild(navLinks);
-      } else {
-        // Move nav-links back to original position when closing
-        document.querySelector('.nav-container').insertBefore(navLinks, mobileMenuToggle);
-      }
-    });
-
-    // Close menu when a link is clicked
-    navLinks.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenuToggle.classList.remove('active');
-        mobileMenu.classList.remove('active');
-        // Move nav-links back to original position
-        document.querySelector('.nav-container').insertBefore(navLinks, mobileMenuToggle);
-      });
-    });
-  </script>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-brand-name">
+        <div class="pip"></div>
+        <span>League<em>Lens</em> Engine</span>
+      </div>
+      <p>Continuous sports intelligence for the Premier League and IPL T20. Evolving the way you see sport.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Platforms</h4>
+      <a href="https://leaguelens-epl.streamlit.app" target="_blank">LeagueLens EPL</a>
+      <a href="https://leaguelens-fpl.streamlit.app" target="_blank">LeagueLens FPL</a>
+      <a href="https://leaguelens-iplt20.streamlit.app" target="_blank">LeagueLens IPL T20</a>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="#why">About</a>
+      <a href="#methodology">Methodology</a>
+      <a href="#platforms">Platforms</a>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <a href="https://github.com/SportlyxEngine" target="_blank">GitHub</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 <span>LeagueLens Engine</span>. All rights reserved.</p>
+    <p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gray3);">Evolving the Way You See Sport</p>
+  </div>
+</footer>
 
 </body>
 </html>
